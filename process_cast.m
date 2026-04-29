@@ -569,7 +569,7 @@ if pcs.begin_step <= pcs.cur_step
          ok = 1; eval(sprintf('h = get(%d);',j),'ok = 0;');
          if ok
            figure(j); pause(1);
-           eval(sprintf('print -dpsc %s_%02d.ps',f.res,j))
+           eval(sprintf('print -depsc %s_%02d.ps',f.res,j))
          end
        end
     end
